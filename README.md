@@ -9,6 +9,7 @@ Inspired by personality quizzes like 16Personalities and fun interactive experie
 **Development in progress**
 
 Current features:
+
 ✅ React + Vite setup  
 ✅ Multi-page navigation  
 ✅ Ocean-themed landing page  
@@ -38,9 +39,9 @@ Marine Personality Result
 Users answer personality questions, and each response contributes points toward different marine animals.
 The highest-scoring animal becomes the user's marine alter ego.
 
-##Current Marine Personalities
+## Current Marine Personalities
 Currently implemented:
-##Animal	Personality
+### Animal	Personality
 | Animal        | Personality                       |
 | ------------- | --------------------------------- |
 | 🐙 Octopus    | Curious, Creative, Adaptable      |
