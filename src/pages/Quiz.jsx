@@ -3,11 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { questions } from "../data/questions";
 import QuestionCard from "../components/QuestionCard";
 import { calculateResult } from "../utils/calculateResult";
+import BubbleBackground from "../components/BubbleBackground";
+import ProgressBar from "../components/ProgressBar";
+import LoadingScreen from "../components/LoadingScreen";
 
 function Quiz() {
   const navigate = useNavigate();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState({});
+  const [showLoading, setShowLoading] = useState(false);
   function handleAnswer(answer) {
     setScores(prev => {
       const updated = { ...prev };
@@ -17,36 +21,42 @@ function Quiz() {
       }
       return updated;
     });
-    setCurrentQuestion(prev => prev + 1);
+    setCurrentQuestion(prev => {
+    const next = prev + 1;
+
+    if (next >= questions.length) {
+      setShowLoading(true);
+    }
+
+    return next;
+  });
   }
   useEffect(() => {
-    if (currentQuestion >= questions.length) {
-      const result = calculateResult(scores);
+  if (currentQuestion >= questions.length && showLoading) {
+
+    const result = calculateResult(scores);
+
+    const timer = setTimeout(() => {
       navigate(`/result?animal=${result}`);
-    }
-  }, [currentQuestion, scores, navigate]);
-  if (currentQuestion >= questions.length) {
-    return (
-      <h1>
-        Finding your marine personality... 🌊
-      </h1>
-    );
+    }, 2500);
+
+    return () => clearTimeout(timer);
   }
+
+}, [currentQuestion, showLoading]);
+
+  if (showLoading) {
+  return <LoadingScreen />;
+}
   const question = questions[currentQuestion];
   return (
     <div className="quiz-page">
+       <BubbleBackground />
         <div className="quiz-container">
-        <p className="progress">
-            Question {currentQuestion + 1} / {questions.length}
-        </p>
-        <div className="progress-bar">
-            <div
-            className="progress-fill"
-            style={{
-                width: `${((currentQuestion + 1) / questions.length) * 100}%`
-            }}
-            />
-        </div>
+        <ProgressBar
+        current={currentQuestion + 1}
+        total={questions.length}
+      />
         <QuestionCard
             question={question.question}
             answers={question.answers}

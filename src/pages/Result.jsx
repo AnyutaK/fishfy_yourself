@@ -1,6 +1,7 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { animals } from "../data/animals";
-import { motion } from "framer-motion";
+import BubbleBackground from "../components/BubbleBackground";
+import ResultCard from "../components/ResultCard";
 
 function Result() {
   const [searchParams] = useSearchParams();
@@ -14,57 +15,17 @@ function Result() {
       </h1>
     );
   }
-  return (
-    <div className="result-page">
-    <motion.div
-      className="result-card"
-      initial={{ opacity:0, scale:0.7,y:40 }}
-      animate={{ opacity:1, scale:1, y:0 }}
-      transition={{ duration:0.6 ,ease: "easeInOut" }}
-    >
-        <motion.div
-        className="animal-emoji"
-        animate={{
-          y: [0, -10, 0]
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity
-        }}
-      >
-        {animal.emoji}
-      </motion.div>
-        <p className="subtitle">
-          Your marine alter ego is...
-        </p>
-        <h1>
-          {animal.name}
-        </h1>
-        <div className="traits">
-          {animal.traits.map((trait, index) => (
-            <span key={index}>
-              {trait}
-            </span>
-          ))}
-        </div>
-        <p className="description">
-          {animal.description}
-        </p>
-        <div className="fun-fact">
-          <h3>
-            🌊 Ocean Fact
-          </h3>
-          <p>
-            {animal.funFact}
-          </p>
-        </div>
-        <button
-          onClick={() => navigate("/")}
-        >
-          Discover Again 🌊
-        </button>
-        </motion.div>
-      </div>
-  );
+return (
+  <div className="result-page">
+
+    <BubbleBackground />
+
+    <ResultCard
+      animal={animal}
+      onRestart={() => navigate("/")}
+    />
+
+  </div>
+);
 }
 export default Result;

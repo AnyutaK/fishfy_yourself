@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import AnswerButton from "./AnswerButton";
+
 function QuestionCard({ question, answers, onAnswer }) {
 
   return (
@@ -13,34 +15,13 @@ function QuestionCard({ question, answers, onAnswer }) {
       </h2>
       <div className="answers">
         {answers.map((answer, index) => (
-
-          <motion.button
-            key={index}
-            className="answer-button"
-            onClick={() => onAnswer(answer)}
-            initial={{
-              opacity: 0,
-              x: -20
-            }}
-            animate={{
-              opacity: 1,
-              x: 0
-            }}
-            transition={{
-              delay: index * 0.1
-            }}
-            whileHover={{
-              scale: 1.03,
-              y: -3
-            }}
-            whileTap={{
-              scale: 0.97
-            }}
-          >
-            {answer.text}
-          </motion.button>
-
-        ))}
+  <AnswerButton
+    key={index}
+    answer={answer}
+    onClick={() => onAnswer(answer)}
+    delay={index * 0.1}
+  />
+))}
       </div>
     </motion.div>
   );
