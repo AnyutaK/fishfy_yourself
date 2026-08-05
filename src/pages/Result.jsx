@@ -18,13 +18,22 @@ function Result() {
     <div className="result-page">
     <motion.div
       className="result-card"
-      initial={{ opacity:0, scale:0.8 }}
-      animate={{ opacity:1, scale:1 }}
-      transition={{ duration:0.6 }}
+      initial={{ opacity:0, scale:0.7,y:40 }}
+      animate={{ opacity:1, scale:1, y:0 }}
+      transition={{ duration:0.6 ,ease: "easeInOut" }}
     >
-        <div className="animal-emoji">
-          {animal.emoji}
-        </div>
+        <motion.div
+        className="animal-emoji"
+        animate={{
+          y: [0, -10, 0]
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity
+        }}
+      >
+        {animal.emoji}
+      </motion.div>
         <p className="subtitle">
           Your marine alter ego is...
         </p>

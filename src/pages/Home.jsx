@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import BubbleBackground from "../components/BubbleBackground";
 
 function Home() {
   const navigate = useNavigate();
@@ -10,6 +11,8 @@ function Home() {
   animate={{ opacity: 1 }}
   transition={{ duration: 0.8 }}
 >
+      <BubbleBackground />
+      
 <motion.div
   className="hero"
   initial={{ opacity: 0, y: 40 }}
