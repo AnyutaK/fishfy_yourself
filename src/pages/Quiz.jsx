@@ -43,7 +43,7 @@ function Quiz() {
     return () => clearTimeout(timer);
   }
 
-}, [currentQuestion, showLoading]);
+}, [currentQuestion, showLoading, scores, navigate]);
 
   if (showLoading) {
   return <LoadingScreen />;
