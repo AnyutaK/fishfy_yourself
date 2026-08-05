@@ -37,7 +37,11 @@ function Quiz() {
     const result = calculateResult(scores);
 
     const timer = setTimeout(() => {
-      navigate(`/result?animal=${result}`);
+      navigate(
+  `/result?animal=${result.animal}&almost=${result.almost
+    .map(item => item.animal)
+    .join(",")}`
+);
     }, 2500);
 
     return () => clearTimeout(timer);

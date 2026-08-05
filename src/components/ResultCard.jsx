@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function ResultCard({ animal, onRestart }) {
+function ResultCard({ animal,almostAnimals, onRestart }) {
 
   return (
 <motion.div
@@ -45,6 +45,28 @@ function ResultCard({ animal, onRestart }) {
             {animal.funFact}
           </p>
         </div>
+        {
+  almostAnimals.length > 0 && (
+    <div className="almost-section">
+      <h3>
+        🌊 Almost Was...
+      </h3>
+
+      <div className="almost-list">
+        {almostAnimals.map((item) => (
+          <div key={item.id} className="almost-card">
+            <span>
+              {item.emoji}
+            </span>
+            <p>
+              {item.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
         <button onClick={onRestart}>
           Discover Again 🌊
         </button>

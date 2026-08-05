@@ -7,7 +7,13 @@ function Result() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const animalId = searchParams.get("animal");
-  const animal = animals[animalId];
+const almostIds = searchParams.get("almost")?.split(",") || [];
+
+const animal = animals[animalId];
+
+const almostAnimals = almostIds.map(
+  id => animals[id]
+).filter(Boolean);
   if (!animal) {
     return (
       <h1>
@@ -21,10 +27,10 @@ return (
     <BubbleBackground />
 
     <ResultCard
-      animal={animal}
-      onRestart={() => navigate("/")}
-    />
-
+  animal={animal}
+  almostAnimals={almostAnimals}
+  onRestart={() => navigate("/")}
+/>
   </div>
 );
 }
