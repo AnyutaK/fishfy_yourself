@@ -1,11 +1,21 @@
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Home() {
   const navigate = useNavigate();
   return (
-    <div className="home">
-      <div className="hero">
-        <div className="emoji">
+    <motion.div
+  className="home"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.8 }}
+>
+<motion.div
+  className="hero"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>        <div className="emoji">
           🐠
         </div>
         <h1>
@@ -19,8 +29,8 @@ function Home() {
         >
           Start Quiz →
         </button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 export default Home;

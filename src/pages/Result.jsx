@@ -1,5 +1,6 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { animals } from "../data/animals";
+import { motion } from "framer-motion";
 
 function Result() {
   const [searchParams] = useSearchParams();
@@ -15,38 +16,46 @@ function Result() {
   }
   return (
     <div className="result-page">
-      <div className="result-card">
+    <motion.div
+      className="result-card"
+      initial={{ opacity:0, scale:0.8 }}
+      animate={{ opacity:1, scale:1 }}
+      transition={{ duration:0.6 }}
+    >
         <div className="animal-emoji">
           {animal.emoji}
         </div>
+        <p className="subtitle">
+          Your marine alter ego is...
+        </p>
         <h1>
-          You are a {animal.name}!
+          {animal.name}
         </h1>
-        <h3>
-          Ocean Profile
-        </h3>
         <div className="traits">
-          {animal.traits.map((trait,index)=>(
+          {animal.traits.map((trait, index) => (
             <span key={index}>
               {trait}
             </span>
           ))}
         </div>
-        <p>
+        <p className="description">
           {animal.description}
         </p>
         <div className="fun-fact">
-          🌊 Fun Fact:
-          <br/>
-          {animal.funFact}
+          <h3>
+            🌊 Ocean Fact
+          </h3>
+          <p>
+            {animal.funFact}
+          </p>
         </div>
         <button
           onClick={() => navigate("/")}
         >
-          Restart Quiz
+          Discover Again 🌊
         </button>
+        </motion.div>
       </div>
-    </div>
   );
 }
 export default Result;

@@ -1,7 +1,13 @@
+import { motion } from "framer-motion";
 function QuestionCard({ question, answers, onAnswer }) {
 
   return (
-    <div className="question-card">
+    <motion.div
+  className="question-card"
+  initial={{ opacity:0, x:50 }}
+  animate={{ opacity:1, x:0 }}
+  transition={{ duration:0.4 }}
+>
       <h2>
         {question}
       </h2>
@@ -16,7 +22,7 @@ function QuestionCard({ question, answers, onAnswer }) {
           </button>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default QuestionCard;
