@@ -1,44 +1,33 @@
-/*export function calculateResult(scores){
-
-  let highestAnimal = null;
-  let highestScore = 0;
-  for(const animal in scores){
-    if(scores[animal] > highestScore){
-      highestScore = scores[animal];
-      highestAnimal = animal;
-    }
-  }
-  return highestAnimal;
-
-}*/
 import { animals } from "../data/animals";
 
 export function calculateResult(scores) {
-
   const sortedAnimals = Object.entries(scores)
     .sort((a, b) => b[1] - a[1]);
-
   const winner = sortedAnimals[0];
-
-  const maxScore = winner[1];
-
   const mainAnimal = winner[0];
-
+  const maxScore = winner[1];
+  const secondScore = sortedAnimals[1]?.[1] || 0;
+  const percentage = Math.round(
+    (maxScore / (maxScore + secondScore)) * 100
+  );
   const almost = sortedAnimals
     .slice(1, 4)
     .map(([animal, score]) => ({
-      animal,
+      id: animal,
+      name: animals[animal].name,
+      emoji: animals[animal].emoji,
       percentage: Math.round((score / maxScore) * 100)
     }));
-
   return {
-    animal: mainAnimal,
-    name: animals[mainAnimal].name,
-    title: animals[mainAnimal].title,
-    traits: animals[mainAnimal].traits,
-    description: animals[mainAnimal].description,
-    funFact: animals[mainAnimal].funFact,
-    percentage: 100,
-    almost
-  };
+  animal: mainAnimal,
+  name: animals[mainAnimal].name,
+  title: animals[mainAnimal].title,
+  traits: animals[mainAnimal].traits,
+  description: animals[mainAnimal].description,
+  funFact: animals[mainAnimal].funFact,
+  whyYouGotThis: animals[mainAnimal].whyYouGotThis,
+  compatibility: animals[mainAnimal].compatibility,
+  percentage,
+  almost
+};
 }

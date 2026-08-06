@@ -36,12 +36,13 @@ function Quiz() {
 
     const result = calculateResult(scores);
 
+    localStorage.setItem(
+      "fishifyResult",
+      JSON.stringify(result)
+    );
+
     const timer = setTimeout(() => {
-      navigate(
-  `/result?animal=${result.animal}&almost=${result.almost
-    .map(item => item.animal)
-    .join(",")}`
-);
+      navigate(`/result?animal=${result.id}`);
     }, 2500);
 
     return () => clearTimeout(timer);

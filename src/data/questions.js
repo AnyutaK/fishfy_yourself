@@ -33,7 +33,7 @@ orca:1
 text:"Stay cautious and prepare",
 scores:{
 crab:2,
-lobster:1,
+lobster:2,
 turtle:1
 }
 }
@@ -58,16 +58,16 @@ otter:1
 text:"Relaxing somewhere peaceful",
 scores:{
 manatee:2,
-whale:1,
+starfish:1,
 turtle:1
 }
 },
 {
 text:"Creating something",
 scores:{
-octopus:2,
+octopus:1,
 angelfish:1,
-seahorse:1
+seahorse:2
 }
 },
 {
@@ -178,7 +178,7 @@ angelfish:1
 {
 text:"Make a careful plan",
 scores:{
-nautilus:2,
+crab:2,
 turtle:1,
 whale:1
 }
@@ -259,7 +259,8 @@ seahorse:1
 text:"A quiet peaceful escape",
 scores:{
 turtle:2,
-manatee:2
+manatee:1,
+starfish:2
 }
 },
 {
@@ -296,8 +297,8 @@ octopus:2
 {
 text:"Protecting people I care about",
 scores:{
-orca:2,
-lobster:1,
+orca:1,
+lobster:2,
 coral:1
 }
 },
@@ -311,8 +312,8 @@ squid:1
 {
 text:"Creating happiness around me",
 scores:{
-clownfish:2,
-otter:1,
+clownfish:1,
+otter:2,
 penguin:1
 }
 }
@@ -405,8 +406,8 @@ answers:[
 {
 text:"The idea generator",
 scores:{
-octopus:2,
-squid:1,
+octopus:1,
+seahorse:2,
 angelfish:1
 }
 },
@@ -548,7 +549,7 @@ squid:1
 text:"Security",
 scores:{
 lobster:2,
-turtle:2
+crab:2
 }
 }
 ]
@@ -570,8 +571,8 @@ squid:2
 {
 text:"Expressing beauty",
 scores:{
-angelfish:2,
-seahorse:2
+angelfish:1,
+seahorse:3
 }
 },
 {
@@ -601,7 +602,7 @@ answers:[
 text:"A peaceful sunrise",
 scores:{
 whale:2,
-manatee:1,
+starfish:1,
 turtle:1
 }
 },
@@ -664,7 +665,8 @@ octopus:1
 text:"Resting somewhere peaceful",
 scores:{
 turtle:2,
-manatee:2
+starfish:2,
+manatee:1
 }
 }
 ]
@@ -696,7 +698,8 @@ coral:1
 text:"Physical courage",
 scores:{
 shark:2,
-lobster:2
+lobster:1,
+crab:2
 }
 },
 {
@@ -733,7 +736,8 @@ orca:1
 text:"Healing and protecting others",
 scores:{
 coral:2,
-manatee:2
+starfish:2,
+manatee:1
 }
 },
 {
@@ -780,8 +784,8 @@ turtle:1
 {
 text:"I bring fun wherever I go",
 scores:{
-dolphin:2,
-otter:2,
+dolphin:1,
+otter:3,
 clownfish:1
 }
 }

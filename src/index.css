@@ -356,12 +356,67 @@ border: 1px solid rgba(255,255,255,0.7);}
   justify-content:center;
   gap:15px;
   flex-wrap:wrap;
+  margin-top:20px;
 }
 .almost-card {
   background:white;
-  padding:15px 20px;
+  padding:20px;
   border-radius:20px;
+  min-width:130px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+.almost-emoji {
+  font-size:45px;
+  display:block;
+}
+.almost-card h3 {
+  margin:10px 0 5px;
+}
+.almost-card p {
+  opacity:0.7;
+}
+.why-card {
+  margin:25px 0;
+  padding:20px;
+  background:rgba(255,255,255,0.6);
+  border-radius:20px;
+}
+.why-card h3 {
+  margin-bottom:10px;
+}
+.ocean-name {
+  margin:25px 0;
+  padding:20px;
+  background:#8acaf5;
+  border-radius:20px;
+}
+.ocean-name h3 {
+  margin-bottom:10px;
+}
+.ocean-name p {
+  font-size:24px;
+  font-weight:700;
+}
+.compatibility-card {
+  margin-top:25px;
+  padding:20px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.6);
+}
+.compatibility-list {
   display:flex;
-  gap:10px;
-  align-items:center;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+.compatibility-item {
+  text-align:center;
+}
+.compatibility-item span {
+  font-size:35px;
+}
+.opposite {
+  margin-top:20px;
+  opacity:0.8;
 }

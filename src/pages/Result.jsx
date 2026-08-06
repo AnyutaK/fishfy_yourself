@@ -1,19 +1,27 @@
-import { useSearchParams, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import { animals } from "../data/animals";
 import BubbleBackground from "../components/BubbleBackground";
 import ResultCard from "../components/ResultCard";
 
 function Result() {
-  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const animalId = searchParams.get("animal");
-const almostIds = searchParams.get("almost")?.split(",") || [];
+ 
+const storedResult = JSON.parse(
+  localStorage.getItem("fishifyResult")
+);
 
-const animal = animals[animalId];
+if (!storedResult) {
+  return <h1>No result found 🐠</h1>;
+}
 
-const almostAnimals = almostIds.map(
-  id => animals[id]
-).filter(Boolean);
+const animal = animals[storedResult.id];
+
+const almostAnimals = storedResult.almost
+  .map(item => ({
+    ...animals[item.id],
+    percentage: item.percentage
+  }))
+  .filter(Boolean);
   if (!animal) {
     return (
       <h1>
@@ -28,6 +36,7 @@ return (
 
     <ResultCard
   animal={animal}
+  result={storedResult}
   almostAnimals={almostAnimals}
   onRestart={() => navigate("/")}
 />
