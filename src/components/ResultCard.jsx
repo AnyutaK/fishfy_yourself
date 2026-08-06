@@ -142,7 +142,7 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
           </h3>
 
           <p>
-            {item.percentage}% match
+            {item.percentage}% similar to the result
           </p>
         </motion.div>
       ))}
