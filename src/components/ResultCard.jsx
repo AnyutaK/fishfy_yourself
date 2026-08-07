@@ -38,60 +38,50 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
   animate={{ opacity: 1 }}
   transition={{ duration: 0.5 }}
 >
-    <motion.div
+      <motion.div
   className="animal-reveal"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 0.3 }}
 >
-  {/* Ripple 1 */}
   <motion.div
-    className="reveal-ripple ripple-one"
-    initial={{ scale: 0.3, opacity: 0 }}
-    animate={{
-      scale: [0.3, 1, 1.5],
-      opacity: [0, 0.7, 0]
-    }}
-    transition={{
-      duration: 1.5,
-      ease: "easeOut"
-    }}
-  />
+  className="reveal-ripple"
+  initial={{
+    scale: 0.4,
+    opacity: 0
+  }}
+  animate={{
+    scale: [0.4, 0.9, 1.5],
+    opacity: [0, 0.7, 0]
+  }}
+  transition={{
+    duration: 1.5,
+    ease: "easeOut"
+  }}
+/>
 
-  {/* Ripple 2 */}
-  <motion.div
-    className="reveal-ripple ripple-two"
-    initial={{ scale: 0.3, opacity: 0 }}
-    animate={{
-      scale: [0.3, 1, 1.6],
-      opacity: [0, 0.5, 0]
-    }}
-    transition={{
-      duration: 1.5,
-      delay: 0.2,
-      ease: "easeOut"
-    }}
-  />
-
-  {/* Ripple 3 */}
-  <motion.div
-    className="reveal-ripple ripple-three"
-    initial={{ scale: 0.3, opacity: 0 }}
-    animate={{
-      scale: [0.3, 1, 1.7],
-      opacity: [0, 0.4, 0]
-    }}
-    transition={{
-      duration: 1.5,
-      delay: 0.4,
-      ease: "easeOut"
-    }}
-  />
-
-  {/* Glow */}
+<motion.div
+  className="reveal-ripple ripple-second"
+  initial={{
+    scale: 0.3,
+    opacity: 0
+  }}
+  animate={{
+    scale: [0.3, 0.8, 1.3],
+    opacity: [0, 0.5, 0]
+  }}
+  transition={{
+    duration: 1.4,
+    delay: 0.25,
+    ease: "easeOut"
+  }}
+/>
   <motion.div
     className="animal-glow"
-    initial={{ scale: 0.3, opacity: 0 }}
+    initial={{
+      scale: 0.3,
+      opacity: 0
+    }}
     animate={{
       scale: [0.3, 1.4, 1],
       opacity: [0, 0.8, 0.25]
@@ -101,52 +91,44 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
       ease: "easeOut"
     }}
   />
-
-  {/* Bubbles */}
-  <div className="reveal-bubbles">
-    {[
-      { size: 6, x: -85, y: -65, delay: 0 },
-      { size: 14, x: 75, y: -80, delay: 0.08 },
-      { size: 9, x: -65, y: 10, delay: 0.12 },
-      { size: 18, x: 85, y: 20, delay: 0.16 },
-      { size: 5, x: -40, y: -95, delay: 0.2 },
-      { size: 11, x: 35, y: -100, delay: 0.24 },
-      { size: 7, x: -100, y: -20, delay: 0.28 },
-      { size: 16, x: 105, y: -35, delay: 0.32 },
-      { size: 5, x: -20, y: 90, delay: 0.36 },
-      { size: 10, x: 60, y: 85, delay: 0.4 },
-      { size: 8, x: -75, y: 65, delay: 0.44 },
-      { size: 13, x: 95, y: 60, delay: 0.48 }
-    ].map((bubble, index) => (
-      <motion.span
-        key={index}
-        className="reveal-bubble"
-        style={{
-          width: bubble.size,
-          height: bubble.size
-        }}
-        initial={{
-          opacity: 0,
-          scale: 0,
-          x: 0,
-          y: 0
-        }}
-        animate={{
-          opacity: [0, 0.9, 0],
-          scale: [0, 1, 0.7],
-          x: bubble.x,
-          y: bubble.y
-        }}
-        transition={{
-          duration: 1.5,
-          delay: bubble.delay,
-          ease: "easeOut"
-        }}
-      />
-    ))}
-  </div>
-
-  {/* THE ACTUAL ANIMAL */}
+<div className="reveal-bubbles">
+  {[
+    { size: 8, x: -75, y: -55, delay: 0.05 },
+    { size: 14, x: 70, y: -70, delay: 0.15 },
+    { size: 5, x: -55, y: 20, delay: 0.25 },
+    { size: 11, x: 80, y: 25, delay: 0.2 },
+    { size: 18, x: -35, y: 75, delay: 0.1 },
+    { size: 7, x: 40, y: 80, delay: 0.3 },
+    { size: 4, x: 15, y: -85, delay: 0.35 },
+    { size: 10, x: -85, y: 5, delay: 0.4 }
+  ].map((bubble, index) => (
+    <motion.span
+      key={index}
+      className="reveal-bubble"
+      style={{
+        width: bubble.size,
+        height: bubble.size
+      }}
+      initial={{
+        opacity: 0,
+        scale: 0,
+        x: 0,
+        y: 0
+      }}
+      animate={{
+        opacity: [0, 0.9, 0],
+        scale: [0, 1, 0.7],
+        x: bubble.x,
+        y: bubble.y
+      }}
+      transition={{
+        duration: 1.4,
+        delay: bubble.delay,
+        ease: "easeOut"
+      }}
+    />
+  ))}
+</div>
   <motion.div
     className="animal-emoji"
     initial={{

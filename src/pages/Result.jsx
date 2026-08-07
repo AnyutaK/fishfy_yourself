@@ -1,6 +1,5 @@
 import {useNavigate } from "react-router-dom";
 import { animals } from "../data/animals";
-import BubbleBackground from "../components/BubbleBackground";
 import ResultCard from "../components/ResultCard";
 
 function Result() {
@@ -31,9 +30,6 @@ const almostAnimals = storedResult.almost
   }
 return (
   <div className="result-page">
-
-    <BubbleBackground />
-
     <ResultCard
   animal={animal}
   result={storedResult}

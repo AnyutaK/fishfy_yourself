@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { questions } from "../data/questions";
 import QuestionCard from "../components/QuestionCard";
 import { calculateResult } from "../utils/calculateResult";
-import BubbleBackground from "../components/BubbleBackground";
 import ProgressBar from "../components/ProgressBar";
 import LoadingScreen from "../components/LoadingScreen";
 
@@ -60,7 +59,6 @@ function Quiz() {
   const question = questions[currentQuestion];
   return (
     <div className="quiz-page">
-       <BubbleBackground />
         <div className="quiz-container">
         <ProgressBar
         current={currentQuestion + 1}
