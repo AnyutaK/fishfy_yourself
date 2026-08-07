@@ -10,34 +10,34 @@ Inspired by personality quizzes like 16Personalities and fun interactive experie
 
 Current features:
 
-- ✅ React + Vite setup
-- ✅ Multi-page navigation with React Router
-- ✅ Ocean-themed landing page
-- ✅ Animated landing page entrance
-- ✅ Animated fish on landing page
-- ✅ Interactive personality quiz
-- ✅ 20 personality-based questions
-- ✅ Question progress tracking
-- ✅ Answer-based scoring system
-- ✅ 20 marine personality results
-- ✅ Dynamic result calculation
-- ✅ Match percentage system
-- ✅ "Almost Was" secondary results
-- ✅ "Why you got this" personality explanation
-- ✅ Personalized ocean name generator
-- ✅ Personality compatibility system
-- ✅ Opposite personality system
-- ✅ Animated ocean bubbles
-- ✅ Floating underwater particles
-- ✅ Ocean light rays
-- ✅ Framer Motion animations
-- ✅ Animated loading screen
-- ✅ Animated result reveal
-- ✅ Countdown result sequence
-- ✅ Animated ripples during result reveal
-- ✅ Reveal bubbles
-- ✅ Animal glow effects
-- ✅ Responsive glassmorphism UI
+✅ React + Vite setup
+✅ Multi-page navigation with React Router
+✅ Ocean-themed landing page
+✅ Animated landing page entrance
+✅ Animated fish on landing page
+✅ Interactive personality quiz
+✅ 20 personality-based questions
+✅ Question progress tracking
+✅ Answer-based scoring system
+✅ 20 marine personality results
+✅ Dynamic result calculation
+✅ Match percentage system
+✅ "Almost Was" secondary results
+✅ "Why you got this" personality explanation
+✅ Personalized ocean name generator
+✅ Personality compatibility system
+✅ Opposite personality system
+✅ Animated ocean bubbles
+✅ Floating underwater particles
+✅ Ocean light rays
+✅ Framer Motion animations
+✅ Animated loading screen
+✅ Animated result reveal
+✅ Countdown result sequence
+✅ Animated ripples during result reveal
+✅ Reveal bubbles
+✅ Animal glow effects
+✅ Responsive glassmorphism UI
 
 ## How It Works
 
@@ -57,15 +57,15 @@ Personalized Ocean Identity
 Users answer a series of personality questions. Each answer contributes points toward different marine personalities.
 The highest-scoring animal becomes the user's marine alter ego.
 Each result includes:
-🧬 Personality traits
-📖 Custom personality description
-💭 Explanation of why the result was chosen
-🌊 Ocean fact
-✨ Personalized ocean name
-🤝 Compatible personalities
-🔀 Opposite personality
-🐠 Secondary "Almost Was" results
-🎯 Match percentage
+- Personality traits
+- Custom personality description
+- Explanation of why the result was chosen
+- Ocean fact
+- Personalized ocean name
+- Compatible personalities
+- Opposite personality
+- Secondary "Almost Was" results
+- Match percentage
 
 ## Current Marine Personalities
 Currently implemented:
@@ -96,14 +96,14 @@ Currently implemented:
 ### Result Experience
 The result reveal is designed as a small animated experience rather than simply displaying the final score.
 The current reveal includes:
-- 🌊 Loading transition
-- ⏳ Countdown sequence
-- 🫧 Expanding ocean ripples
-- 🫧 Floating reveal bubbles
-- 💙 Soft animal glow
-- 🐠 Animated animal entrance
-- ✨ Match percentage reveal
-- 🌊 Personalized ocean identity
+- Loading transition
+- Countdown sequence
+- Expanding ocean ripples
+- Floating reveal bubbles
+- Soft animal glow
+- Animated animal entrance
+- Match percentage reveal
+- Personalized ocean identity
 The result card then reveals the full personality profile.
   
 
