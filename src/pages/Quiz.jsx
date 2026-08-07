@@ -42,8 +42,12 @@ function Quiz() {
     );
 
     const timer = setTimeout(() => {
-      navigate(`/result?animal=${result.id}`);
-    }, 2500);
+  navigate(
+    `/result?animal=${result.animal}&almost=${result.almost
+      .map(item => item.id)
+      .join(",")}`
+  );
+}, 6500);
 
     return () => clearTimeout(timer);
   }

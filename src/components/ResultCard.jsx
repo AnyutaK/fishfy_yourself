@@ -77,17 +77,17 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
           animate={{opacity:1, scale:1}}
           transition={{delay:0.6}}
         >
-          ✨ {result.percentage}% Match
+          {result.percentage}% Match
         </motion.h2>
         <h2 className="animal-title">
           {animal.title}
         </h2>
         <div className="ocean-name">
         <h3>
-          ✨ Your ocean name
+          Your ocean name
         </h3>
         <p>
-          {oceanName}
+         ✨ {oceanName} ✨
         </p>
       </div>
         <div className="traits">

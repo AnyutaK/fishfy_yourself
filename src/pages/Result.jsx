@@ -14,7 +14,7 @@ if (!storedResult) {
   return <h1>No result found 🐠</h1>;
 }
 
-const animal = animals[storedResult.id];
+const animal = animals[storedResult.animal];
 
 const almostAnimals = storedResult.almost
   .map(item => ({
