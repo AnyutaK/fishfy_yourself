@@ -550,3 +550,67 @@ border: 1px solid rgba(255,255,255,0.7);}
   font-size: 80px;
   margin-bottom: 20px;
 }
+.animal-reveal {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animal-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(125, 211, 252, 0.25);
+  filter: blur(25px);
+}
+.animal-reveal .animal-emoji {
+  position: relative;
+  z-index: 2;
+  font-size: 110px;
+  margin: 0;
+  filter: drop-shadow(
+    0 10px 15px rgba(0, 30, 60, 0.3)
+  );
+}
+.reveal-ripple {
+  position: absolute;
+  width: 130px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid rgba(125, 211, 252, 0.6);
+  box-shadow: 0 0 15px rgba(125, 211, 252, 0.25);
+  transform: rotateX(65deg);
+  pointer-events: none;
+}
+.ripple-one {
+  z-index: 1;
+}
+.ripple-two {
+  width: 155px;
+  height: 55px;
+}
+.ripple-three {
+  width: 180px;
+  height: 65px;
+}
+.reveal-bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.reveal-bubble {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  background: rgba(186, 230, 253, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    inset 1px 1px 3px rgba(255, 255, 255, 0.8),
+    0 0 8px rgba(125, 211, 252, 0.5);
+}
