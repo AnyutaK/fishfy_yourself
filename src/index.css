@@ -47,6 +47,7 @@ body {
 .hero h1 {
   font-size: 56px;
   margin-bottom: 15px;
+  letter-spacing: -1px;
 }
 .hero p {
   font-size: 20px;
@@ -614,4 +615,18 @@ border: 1px solid rgba(255,255,255,0.7);}
   box-shadow:
     inset 1px 1px 3px rgba(255, 255, 255, 0.8),
     0 0 8px rgba(125, 211, 252, 0.5);
+}
+.home-eyebrow {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.home-description {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
