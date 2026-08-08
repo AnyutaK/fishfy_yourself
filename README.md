@@ -4,7 +4,7 @@
 Fishify Yourself is an interactive personality quiz that matches users with a marine creature based on their answers.
 Inspired by personality quizzes like 16Personalities and fun interactive experiences, the project combines playful UX with a modern ocean-inspired design.
 
-##Current Progress
+## Current Progress
 
 **V1 — In Development**
 
