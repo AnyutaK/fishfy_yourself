@@ -279,5 +279,7 @@ Fishify Yourself is being built as a frontend-focused project exploring:
 - Creative visual design
 ## Project Status
 V1 — Active Development
+
 The goal of V1 is to create a polished, fun, visually engaging personality quiz before expanding Fishify into more advanced features.
+
 Built with 🌊, curiosity, and an unreasonable number of marine animals.
