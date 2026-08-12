@@ -1,9 +1,31 @@
+import seahorseImage from "../assets/seahorse.png";
+import whaleImage from "../assets/whale.png";
+import nautilusImage from "../assets/nautilus.png";
+import starfishImage from "../assets/starfish.png";
+import dolphinImage from "../assets/dolphin.png";
+import angelfishImage from "../assets/angelfish.png";
+import seaTurtleImage from "../assets/sea-turtle.png";
+import octopusImage from "../assets/octopus.png";
+import squidImage from "../assets/squid.png";
+import lobsterImage from "../assets/lobster.png";
+import sharkImage from "../assets/shark.png";
+import manateeImage from "../assets/manatee.png";
+import orcaImage from "../assets/orca.png";
+import clownfishImage from "../assets/clownfish.png";
+import mantaRayImage from "../assets/manta_ray.png";
+import penguinImage from "../assets/penguin.png";
+import jellyfishImage from "../assets/jellyfish.png";
+import crabImage from "../assets/crab.png";
+import coralImage from "../assets/corals.png";
+import seaOtterImage from "../assets/sea-otter.png";
+
 export const animals = {
   octopus: {
     id: "octopus",
     name: "Octopus",
     title: "The Curious Creator",
     emoji: "🐙",
+    image: octopusImage,
     traits: [
       "Creative",
       "Curious",
@@ -30,6 +52,7 @@ export const animals = {
     name: "Dolphin",
     title: "The Ocean Spark",
     emoji: "🐬",
+    image: dolphinImage,
     traits: [
       "Playful",
       "Social",
@@ -56,6 +79,7 @@ export const animals = {
     name: "Whale",
     title: "The Deep Thinker",
     emoji: "🐋",
+    image: whaleImage,  
     traits: [
       "Wise",
       "Calm",
@@ -82,6 +106,7 @@ export const animals = {
     name: "Sea Turtle",
     title: "The Gentle Voyager",
     emoji: "🐢",
+    image: seaTurtleImage,  
     traits: [
       "Patient",
       "Peaceful",
@@ -108,6 +133,7 @@ export const animals = {
     name: "Shark",
     title: "The Ocean Challenger",
     emoji: "🦈",
+    image: sharkImage,  
     traits: [
       "Fearless",
       "Driven",
@@ -134,6 +160,7 @@ export const animals = {
     name: "Orca",
     title: "The Ocean Leader",
     emoji: "🐳",
+    image: orcaImage,
     traits: [
       "Confident",
       "Protective",
@@ -160,6 +187,7 @@ export const animals = {
     name: "Manta Ray",
     title: "The Free Spirit",
     emoji: "🪽",
+    image: mantaRayImage,
     traits: [
       "Graceful",
       "Observant",
@@ -186,6 +214,7 @@ export const animals = {
     name: "Jellyfish",
     title: "The Dreamy Drifter",
     emoji: "🪼",
+    image: jellyfishImage,
     traits: [
       "Mysterious",
       "Independent",
@@ -211,6 +240,7 @@ export const animals = {
     name: "Seahorse",
     title: "The Tiny Dreamer",
     emoji: "🐴",
+    image: seahorseImage,
     traits: [
       "Gentle",
       "Creative",
@@ -237,6 +267,7 @@ export const animals = {
     name: "Clownfish",
     title: "The Reef Friend",
     emoji: "🐠",
+    image: clownfishImage,
     traits: [
       "Optimistic",
       "Loyal",
@@ -263,6 +294,7 @@ export const animals = {
     name: "Penguin",
     title: "The Loyal Heart",
     emoji: "🐧",
+    image: penguinImage,
     traits: [
       "Reliable",
       "Caring",
@@ -289,6 +321,7 @@ export const animals = {
     name: "Sea Otter",
     title: "The Joy Keeper",
     emoji: "🦦",
+    image: seaOtterImage,
     traits: [
       "Playful",
       "Warm",
@@ -315,6 +348,7 @@ export const animals = {
     name: "Squid",
     title: "The Strategic Mind",
     emoji: "🦑",
+    image: squidImage,
     traits: [
       "Intelligent",
       "Strategic",
@@ -341,6 +375,7 @@ export const animals = {
     name: "Crab",
     title: "The Reef Guardian",
     emoji: "🦀",
+    image: crabImage,
     traits: [
       "Protective",
       "Resourceful",
@@ -367,6 +402,7 @@ export const animals = {
     name: "Starfish",
     title: "The Balanced Soul",
     emoji: "⭐",
+    image: starfishImage,
     traits: [
       "Patient",
       "Balanced",
@@ -393,6 +429,7 @@ export const animals = {
     name: "Nautilus",
     title: "The Ancient Dreamer",
     emoji: "🐚",
+    image: nautilusImage,
     traits: [
       "Thoughtful",
       "Curious",
@@ -419,6 +456,7 @@ export const animals = {
     name: "Lobster",
     title: "The Ocean Shield",
     emoji: "🦞",
+    image: lobsterImage,
     traits: [
       "Strong",
       "Dependable",
@@ -445,6 +483,7 @@ export const animals = {
     name: "Angelfish",
     title: "The Ocean Artist",
     emoji: "🐟",
+    image: angelfishImage,
     traits: [
       "Elegant",
       "Creative",
@@ -471,6 +510,7 @@ export const animals = {
     name: "Manatee",
     title: "The Gentle Giant",
     emoji: "🫧",
+    image: manateeImage,
     traits: [
       "Kind",
       "Peaceful",
@@ -497,6 +537,7 @@ export const animals = {
     name: "Coral",
     title: "The Heart of the Reef",
     emoji: "🪸",
+    image: coralImage,
     traits: [
       "Supportive",
       "Nurturing",
