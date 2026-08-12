@@ -241,19 +241,19 @@ Fishify V2 will focus on making the personality system more sophisticated and ex
 ### Face-to-Animal Mode
 - An experimental mode that analyzes a user's face and matches them with a marine animal.
 - Potentially exploring:
-- - Computer vision
-- - Face detection
-- - Image processing
-- - ML-based classification
+  - Computer vision
+  - Face detection
+  - Image processing
+  - ML-based classification
 ### Personality Quiz 2.0
 - A deeper personality model rather than simple animal-specific scoring.
 - Potential personality dimensions could include:
-- - Curiosity
-- - Creativity
-- - Social energy
-- - Adaptability
-- - Courage
-- - Independence
+  - Curiosity
+  - Creativity
+  - Social energy
+  - Adaptability
+  - Courage
+  - Independence
 These dimensions could be used to create more nuanced marine personalities.
 ### Smarter "Why You Got This"
 Instead of using a mostly fixed explanation, Fishify could analyze the user's individual answers and generate a more personalized explanation of their result.
@@ -262,10 +262,10 @@ Expand the current compatibility system into a visual personality compatibility 
 ### Ocean Soundscapes
 - Optional ambient underwater audio based on the user's result world.
 - Examples:
-- - Deep-sea ambience
-- - Reef sounds
-- - Open-ocean ambience
-- - Coastal water
+  - Deep-sea ambience
+  - Reef sounds
+  - Open-ocean ambience
+  - Coastal water
 - Sound would be optional and muted by default.
 
 ## Project Goals
@@ -277,7 +277,7 @@ Fishify Yourself is being built as a frontend-focused project exploring:
 - Responsive UI
 - Data-driven interfaces
 - Creative visual design
-- 
+
 ## Project Status
 V1 — Active Development
 
