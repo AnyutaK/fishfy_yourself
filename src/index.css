@@ -232,79 +232,6 @@ body {
   box-shadow:
   inset -2px -2px 6px rgba(255,255,255,0.3),
   0 0 8px rgba(255,255,255,0.2);}
-/*
-.bubble {
-  position: absolute;
-  bottom: -60px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.45);
-  animation-name: rise;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-}
-.bubble:nth-child(2n) {
-  width: 30px;
-  height: 20px;
-}
-.bubble:nth-child(3n) {
-  width: 30px;
-  height: 30px;
-}
-
-.bubble:nth-child(5n) {
-  width: 45px;
-  height: 45px;
-}
-
-.bubble:nth-child(7n) {
-  width: 12px;
-  height: 12px;
-}
-.bubble:nth-child(1) {
-  left:10%;
-  animation-delay:0s;
-}
-
-.bubble:nth-child(2) {
-  left:25%;
-  animation-delay:1s;
-}
-
-.bubble:nth-child(3) {
-  left:40%;
-  animation-delay:2s;
-}
-
-.bubble:nth-child(4) {
-  left:60%;
-  animation-delay:0.5s;
-}
-
-.bubble:nth-child(5) {
-  left:80%;
-  animation-delay:1.5s;
-}
-.bubble {
-  background: rgba(255,255,255,0.45);
-border: 1px solid rgba(255,255,255,0.7);}
-  @keyframes rise {
-  from {
-    transform: translateY(0) translateX(0);
-    opacity:0;
-  }
-  20% {
-    opacity:0.7;
-  }
-   50% {
-    transform: translateY(-60vh) translateX(20px);
-  }
-  to {
-    transform: translateY(-120vh) translateX(-20px);
-    opacity:0;
-  }
-}*/
 @keyframes rise {
   0% {
     transform:
@@ -629,4 +556,45 @@ border: 1px solid rgba(255,255,255,0.7);}
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+}
+.animal-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 10px 15px rgba(0, 30, 60, 0.3));
+}
+.almost-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+  filter: drop-shadow(0 6px 10px rgba(0, 30, 60, 0.25));
+}
+.compatibility-image {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 5px;
+  filter: drop-shadow(0 5px 8px rgba(0, 30, 60, 0.25));
+}
+.opposite-animal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.animal-reveal {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

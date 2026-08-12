@@ -129,24 +129,24 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
     />
   ))}
 </div>
-  <motion.div
-    className="animal-emoji"
-    initial={{
-      opacity: 0,
-      scale: 0.2
-    }}
-    animate={{
-      opacity: [0, 1, 1],
-      scale: [0.2, 1.25, 1]
-    }}
-    transition={{
-      duration: 1.1,
-      times: [0, 0.65, 1],
-      ease: "easeOut"
-    }}
-  >
-    {animal.emoji}
-  </motion.div>
+ <motion.img
+  className="animal-image"
+  src={animal.image}
+  alt={animal.name}
+  initial={{
+    opacity: 0,
+    scale: 0.2
+  }}
+  animate={{
+    opacity: [0, 1, 1],
+    scale: [0.2, 1.25, 1]
+  }}
+  transition={{
+    duration: 1.1,
+    times: [0, 0.65, 1],
+    ease: "easeOut"
+  }}
+/>
 </motion.div>
       <motion.p
         initial={{opacity:0, y:20}}
@@ -224,10 +224,11 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="almost-emoji">
-            {item.emoji}
-          </span>
-
+          <img
+            className="almost-image"
+            src={item.image}
+            alt={item.name}
+          />
           <h3>
             {item.name}
           </h3>
@@ -258,9 +259,11 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
         key={item.id}
         className="compatibility-item"
       >
-        <span>
-          {item.emoji}
-        </span>
+         <img
+        className="compatibility-image"
+        src={item.image}
+        alt={item.name}
+      />
 
         <p>
           {item.name}
@@ -277,11 +280,17 @@ function ResultCard({ animal,result,almostAnimals, onRestart }) {
         Different energy:
       </p>
 
-      <span>
-        {oppositeAnimal.emoji}
-        {" "}
-        {oppositeAnimal.name}
-      </span>
+      <div className="opposite-animal">
+    <img
+      className="compatibility-image"
+      src={oppositeAnimal.image}
+      alt={oppositeAnimal.name}
+    />
+
+    <span>
+      {oppositeAnimal.name}
+    </span>
+    </div>
     </div>
   )}
 
