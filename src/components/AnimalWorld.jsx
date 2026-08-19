@@ -3,6 +3,7 @@ import "./AnimalWorld.css";
 import octopus1 from "../assets/root_assets/octopus1.png";
 import octopus2 from "../assets/root_assets/octopus2.png";
 import octopus3 from "../assets/root_assets/octopus3.png";
+import octopus4 from "../assets/root_assets/octopus3.png";
 
 import dolphin1 from "../assets/root_assets/dolphin1.png";
 import dolphin2 from "../assets/root_assets/dolphin2.png";
@@ -86,7 +87,7 @@ import coral8 from "../assets/root_assets/coral8.png";
 
 function AnimalWorld({ animal }) {
   const worlds = {
-  octopus: [octopus1, octopus2, octopus3],
+  octopus: [octopus1, octopus2, octopus3,octopus4],
   dolphin: [dolphin1, dolphin2, dolphin3],
   whale: [whale1, whale2],
   turtle: [turtle1, turtle2, turtle3],
@@ -141,6 +142,16 @@ function AnimalWorld({ animal }) {
         <div className="environment-shape shape-two" />
         <div className="environment-shape shape-three" />
       </div>
+      {animal.id === "coral" && (
+      <div className="coral-color-blobs">
+        <div className="coral-blob coral-blob-1" />
+        <div className="coral-blob coral-blob-2" />
+        <div className="coral-blob coral-blob-3" />
+        <div className="coral-blob coral-blob-4" />
+        <div className="coral-blob coral-blob-5" />
+        <div className="coral-blob coral-blob-6" />
+      </div>
+    )}
       {assets.map((src, index) => (
         <img
           key={`${src}-${index}`}
