@@ -1,0 +1,564 @@
+.animal-world {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.world-asset {
+  position: absolute;
+  object-fit: contain;
+}
+/* =========================================
+   ANIMAL WORLD ASSETS
+   Images sit along the sides of the result card
+   ========================================= */
+
+.animal-world {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.world-asset {
+  position: absolute;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.8;
+  filter: drop-shadow(0 8px 12px rgba(0, 30, 60, 0.25));
+}
+
+
+/* =========================================
+   DEFAULT ASSET POSITIONS
+   ========================================= */
+
+.world-asset-1 {
+  left: 2%;
+  top: 15%;
+  width: 180px;
+}
+
+.world-asset-2 {
+  right: 2%;
+  top: 25%;
+  width: 170px;
+}
+
+.world-asset-3 {
+  left: 4%;
+  bottom: 10%;
+  width: 160px;
+}
+
+.world-asset-4 {
+  right: 4%;
+  bottom: 8%;
+  width: 180px;
+}
+
+
+/* =========================================
+   OCTOPUS
+   ========================================= */
+
+.world-octopus .world-asset-1 {
+  left: -20px;
+  top: 12%;
+  width: 190px;
+}
+
+.world-octopus .world-asset-2 {
+  right: -25px;
+  top: 18%;
+  width: 190px;
+}
+
+.world-octopus .world-asset-3 {
+  left: -15px;
+  bottom: 8%;
+  width: 200px;
+}
+
+
+/* =========================================
+   DOLPHIN
+   ========================================= */
+
+.world-dolphin .world-asset-1 {
+  left: -15px;
+  top: 12%;
+  width: 190px;
+}
+
+.world-dolphin .world-asset-2 {
+  right: -20px;
+  top: 30%;
+  width: 190px;
+}
+
+.world-dolphin .world-asset-3 {
+  left: -10px;
+  bottom: 8%;
+  width: 170px;
+}
+
+
+/* =========================================
+   WHALE
+   ========================================= */
+
+.world-whale .world-asset-1 {
+  left: -30px;
+  top: 15%;
+  width: 210px;
+}
+
+.world-whale .world-asset-2 {
+  right: -30px;
+  bottom: 15%;
+  width: 210px;
+}
+
+
+/* =========================================
+   TURTLE
+   ========================================= */
+
+.world-turtle .world-asset-1 {
+  left: -20px;
+  top: 20%;
+  width: 180px;
+}
+
+.world-turtle .world-asset-2 {
+  right: -20px;
+  top: 30%;
+  width: 170px;
+}
+
+.world-turtle .world-asset-3 {
+  left: -10px;
+  bottom: 5%;
+  width: 190px;
+}
+
+
+/* =========================================
+   SHARK
+   ========================================= */
+
+.world-shark .world-asset-1 {
+  left: -30px;
+  top: 15%;
+  width: 200px;
+}
+
+.world-shark .world-asset-2 {
+  right: -25px;
+  top: 35%;
+  width: 190px;
+}
+
+.world-shark .world-asset-3 {
+  left: -20px;
+  bottom: 10%;
+  width: 180px;
+}
+
+
+/* =========================================
+   ORCA
+   ========================================= */
+
+.world-orca .world-asset-1 {
+  left: -25px;
+  top: 12%;
+  width: 200px;
+}
+
+.world-orca .world-asset-2 {
+  right: -25px;
+  top: 25%;
+  width: 200px;
+}
+
+.world-orca .world-asset-3 {
+  left: -20px;
+  bottom: 8%;
+  width: 190px;
+}
+
+.world-orca .world-asset-4 {
+  right: -20px;
+  bottom: 5%;
+  width: 180px;
+}
+
+
+/* =========================================
+   MANTA RAY
+   ========================================= */
+
+.world-manta .world-asset-1 {
+  left: -35px;
+  top: 12%;
+  width: 220px;
+  transform: rotate(-8deg);
+}
+
+.world-manta .world-asset-2 {
+  right: -35px;
+  top: 20%;
+  width: 220px;
+  transform: rotate(8deg);
+}
+
+.world-manta .world-asset-3 {
+  left: -30px;
+  bottom: 12%;
+  width: 210px;
+  transform: rotate(6deg);
+}
+
+.world-manta .world-asset-4 {
+  right: -30px;
+  bottom: 8%;
+  width: 210px;
+  transform: rotate(-6deg);
+}
+
+
+/* =========================================
+   JELLYFISH
+   ========================================= */
+
+.world-jellyfish .world-asset-1 {
+  left: -20px;
+  top: 12%;
+  width: 170px;
+}
+
+.world-jellyfish .world-asset-2 {
+  right: -20px;
+  top: 28%;
+  width: 170px;
+}
+
+.world-jellyfish .world-asset-3 {
+  left: -10px;
+  bottom: 10%;
+  width: 180px;
+}
+
+
+/* =========================================
+   SEAHORSE
+   ========================================= */
+
+.world-seahorse .world-asset-1 {
+  right: -15px;
+  top: 10%;
+  width: 150px;
+}
+
+.world-seahorse .world-asset-2 {
+  left: -15px;
+  top: 35%;
+  width: 150px;
+}
+
+.world-seahorse .world-asset-3 {
+  right: -10px;
+  bottom: 8%;
+  width: 160px;
+}
+
+
+/* =========================================
+   CLOWNFISH
+   ========================================= */
+
+.world-clownfish .world-asset-1 {
+  left: -20px;
+  top: 15%;
+  width: 180px;
+}
+
+.world-clownfish .world-asset-2 {
+  right: -20px;
+  top: 25%;
+  width: 180px;
+}
+
+.world-clownfish .world-asset-3 {
+  left: -10px;
+  bottom: 5%;
+  width: 190px;
+}
+
+
+/* =========================================
+   PENGUIN
+   ========================================= */
+
+.world-penguin .world-asset-1 {
+  left: -20px;
+  top: 10%;
+  width: 170px;
+}
+
+.world-penguin .world-asset-2 {
+  right: -20px;
+  bottom: 12%;
+  width: 170px;
+}
+
+
+/* =========================================
+   OTTER
+   IMPORTANT:
+   No floating bubbles.
+   Just the silhouette/assets.
+   ========================================= */
+
+.world-otter .world-asset-1 {
+  right: -20px;
+  top: 15%;
+  width: 180px;
+}
+
+.world-otter .world-asset-2 {
+  left: -20px;
+  top: 38%;
+  width: 170px;
+}
+
+.world-otter .world-asset-3 {
+  right: -15px;
+  bottom: 8%;
+  width: 180px;
+}
+
+
+/* =========================================
+   SQUID
+   ========================================= */
+
+.world-squid .world-asset-1 {
+  left: -30px;
+  top: 10%;
+  width: 190px;
+}
+
+.world-squid .world-asset-2 {
+  right: -30px;
+  top: 30%;
+  width: 190px;
+}
+
+.world-squid .world-asset-3 {
+  left: -20px;
+  bottom: 5%;
+  width: 200px;
+}
+
+
+/* =========================================
+   CRAB
+   ========================================= */
+
+.world-crab .world-asset-1 {
+  left: -20px;
+  bottom: 12%;
+  width: 170px;
+}
+
+.world-crab .world-asset-2 {
+  right: -20px;
+  bottom: 8%;
+  width: 180px;
+}
+
+.world-crab .world-asset-3 {
+  left: 5%;
+  bottom: 2%;
+  width: 160px;
+}
+
+
+/* =========================================
+   STARFISH
+   ========================================= */
+
+.world-starfish .world-asset-1 {
+  right: -15px;
+  top: 15%;
+  width: 150px;
+}
+
+.world-starfish .world-asset-2 {
+  left: -15px;
+  top: 35%;
+  width: 150px;
+}
+
+.world-starfish .world-asset-3 {
+  right: -10px;
+  bottom: 10%;
+  width: 160px;
+}
+
+
+/* =========================================
+   NAUTILUS
+   ========================================= */
+
+.world-nautilus .world-asset-1 {
+  left: -25px;
+  top: 18%;
+  width: 180px;
+}
+
+.world-nautilus .world-asset-2 {
+  right: -25px;
+  top: 30%;
+  width: 180px;
+}
+
+.world-nautilus .world-asset-3 {
+  left: -15px;
+  bottom: 8%;
+  width: 170px;
+}
+
+
+/* =========================================
+   LOBSTER
+   ========================================= */
+
+.world-lobster .world-asset-1 {
+  right: -20px;
+  top: 12%;
+  width: 180px;
+}
+
+.world-lobster .world-asset-2 {
+  left: -20px;
+  top: 35%;
+  width: 180px;
+}
+
+.world-lobster .world-asset-3 {
+  right: -15px;
+  bottom: 8%;
+  width: 190px;
+}
+
+
+/* =========================================
+   ANGELFISH
+   ========================================= */
+
+.world-angelfish .world-asset-1 {
+  right: -20px;
+  top: 12%;
+  width: 180px;
+}
+
+.world-angelfish .world-asset-2 {
+  left: -20px;
+  top: 30%;
+  width: 170px;
+}
+
+.world-angelfish .world-asset-3 {
+  right: -15px;
+  bottom: 8%;
+  width: 180px;
+}
+
+
+/* =========================================
+   MANATEE
+   ========================================= */
+
+.world-manatee .world-asset-1 {
+  left: -20px;
+  top: 18%;
+  width: 190px;
+}
+
+.world-manatee .world-asset-2 {
+  right: -20px;
+  top: 35%;
+  width: 180px;
+}
+
+
+/* =========================================
+   CORAL REEF
+   More assets = fuller reef environment
+   ========================================= */
+
+.world-coral .world-asset-1 {
+  left: -20px;
+  bottom: 0;
+  width: 190px;
+}
+
+.world-coral .world-asset-2 {
+  left: 5%;
+  bottom: -10px;
+  width: 210px;
+}
+
+.world-coral .world-asset-3 {
+  left: 18%;
+  bottom: -5px;
+  width: 180px;
+}
+
+.world-coral .world-asset-4 {
+  right: 18%;
+  bottom: -5px;
+  width: 190px;
+}
+
+.world-coral .world-asset-5 {
+  right: 5%;
+  bottom: -10px;
+  width: 210px;
+}
+
+.world-coral .world-asset-6 {
+  right: -20px;
+  bottom: 0;
+  width: 190px;
+}
+
+.world-coral .world-asset-7 {
+  left: 0;
+  top: 10%;
+  width: 130px;
+  opacity: 0.55;
+}
+
+.world-coral .world-asset-8 {
+  right: 0;
+  top: 15%;
+  width: 140px;
+  opacity: 0.55;
+}
+
+
+/* =========================================
+   KEEP THE RESULT CARD ABOVE THE WORLD
+   ========================================= */
+
+.result-card {
+  position: relative;
+  z-index: 5;
+}
