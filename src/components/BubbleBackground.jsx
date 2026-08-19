@@ -46,7 +46,7 @@ function BubbleBackground() {
         />
       ))}
     </div>
-
+    <div className="bubbles">
     {bubbles.map((bubble) => (
       <span
         key={bubble.id}
@@ -62,6 +62,7 @@ function BubbleBackground() {
         }}
       />
     ))}
+    </div>
   </>
 );
 }

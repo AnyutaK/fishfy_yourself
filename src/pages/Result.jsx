@@ -1,6 +1,7 @@
 import {useNavigate } from "react-router-dom";
 import { animals } from "../data/animals";
 import ResultCard from "../components/ResultCard";
+import AnimalWorld from "../components/AnimalWorld";
 
 function Result() {
   const navigate = useNavigate();
@@ -29,13 +30,15 @@ const almostAnimals = storedResult.almost
     );
   }
 return (
-  <div className="result-page">
+  <div className={`result-page result-${animal.id}`}>
+    <AnimalWorld animal={animal} />
     <ResultCard
-  animal={animal}
-  result={storedResult}
-  almostAnimals={almostAnimals}
-  onRestart={() => navigate("/")}
-/>
+      animal={animal}
+      result={storedResult}
+      almostAnimals={almostAnimals}
+      onRestart={() => navigate("/")}
+    />
+
   </div>
 );
 }

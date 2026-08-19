@@ -20,7 +20,7 @@ body {
       #0369a1 65%,
       #082f49 100%
     );
-  color: #f0f9ff;
+  color: #e9f1ff;
 }
 .home {
   min-height: 100vh;
@@ -34,7 +34,7 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  background: rgba(255,255,255,0.35);
+  background: rgba(157, 229, 255, 0.384);
   padding: 50px;
   border-radius: 30px;
   backdrop-filter: blur(10px);
@@ -54,7 +54,7 @@ body {
   margin-bottom: 30px;
 }
 .hero button {
-  background:#006da4;
+  background:#053663;
   color:white;
   border:none;
   padding:15px 35px;
@@ -136,7 +136,6 @@ body {
   align-items:center;
   padding:20px;
   position: relative;
-  z-index: 2;
 }
 .result-card {
   max-width:600px;
@@ -268,10 +267,14 @@ body {
   position: relative;
   overflow: hidden;
 }
-.quiz-page,
-.result-page {
+.quiz-page {
   position: relative;
   z-index: 2;
+}
+
+.result-page {
+  position: relative;
+  overflow: hidden;
 }
 .loading-screen {
   min-height:100vh;
@@ -597,4 +600,1437 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* =========================================
+   ANIMAL-SPECIFIC RESULT GLOWS
+   ========================================= */
+
+.result-page .result-card {
+  transition:
+    border-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+.result-page {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Octopus */
+.result-page.result-octopus .result-card {
+  border: 2px solid rgba(167, 139, 250, 0.8);
+  box-shadow:
+    0 0 12px rgba(167, 139, 250, 0.6),
+    0 0 30px rgba(167, 139, 250, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Dolphin */
+.result-page.result-dolphin .result-card {
+  border: 2px solid rgba(56, 189, 248, 0.8);
+  box-shadow:
+    0 0 12px rgba(56, 189, 248, 0.6),
+    0 0 30px rgba(56, 189, 248, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Whale */
+.result-page.result-whale .result-card {
+  border: 2px solid rgba(59, 130, 246, 0.8);
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 0.6),
+    0 0 30px rgba(59, 130, 246, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Sea Turtle */
+.result-page.result-turtle .result-card {
+  border: 2px solid rgba(34, 197, 94, 0.75);
+  box-shadow:
+    0 0 12px rgba(34, 197, 94, 0.55),
+    0 0 30px rgba(34, 197, 94, 0.25),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Shark */
+.result-page.result-shark .result-card {
+  border: 2px solid rgba(96, 165, 250, 0.85);
+  box-shadow:
+    0 0 12px rgba(96, 165, 250, 0.65),
+    0 0 30px rgba(96, 165, 250, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Orca */
+.result-page.result-orca .result-card {
+  border: 2px solid rgba(14, 116, 144, 0.85);
+  box-shadow:
+    0 0 12px rgba(14, 116, 144, 0.65),
+    0 0 30px rgba(14, 116, 144, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Manta Ray */
+.result-page.result-manta .result-card {
+  border: 2px solid rgba(45, 212, 191, 0.8);
+  box-shadow:
+    0 0 12px rgba(45, 212, 191, 0.6),
+    0 0 30px rgba(45, 212, 191, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Jellyfish */
+.result-page.result-jellyfish .result-card {
+  border: 2px solid rgba(217, 70, 239, 0.8);
+  box-shadow:
+    0 0 12px rgba(217, 70, 239, 0.6),
+    0 0 30px rgba(217, 70, 239, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Seahorse */
+.result-page.result-seahorse .result-card {
+  border: 2px solid rgba(244, 114, 182, 0.8);
+  box-shadow:
+    0 0 12px rgba(244, 114, 182, 0.6),
+    0 0 30px rgba(244, 114, 182, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Clownfish */
+.result-page.result-clownfish .result-card {
+  border: 2px solid rgba(251, 146, 60, 0.85);
+  box-shadow:
+    0 0 12px rgba(251, 146, 60, 0.65),
+    0 0 30px rgba(251, 146, 60, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Penguin */
+.result-page.result-penguin .result-card {
+  border: 2px solid rgba(125, 211, 252, 0.8);
+  box-shadow:
+    0 0 12px rgba(125, 211, 252, 0.6),
+    0 0 30px rgba(125, 211, 252, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Sea Otter */
+.result-page.result-otter .result-card {
+  border: 2px solid rgba(251, 191, 36, 0.8);
+  box-shadow:
+    0 0 12px rgba(251, 191, 36, 0.6),
+    0 0 30px rgba(251, 191, 36, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Squid */
+.result-page.result-squid .result-card {
+  border: 2px solid rgba(139, 92, 246, 0.8);
+  box-shadow:
+    0 0 12px rgba(139, 92, 246, 0.6),
+    0 0 30px rgba(139, 92, 246, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Crab */
+.result-page.result-crab .result-card {
+  border: 2px solid rgba(239, 68, 68, 0.8);
+  box-shadow:
+    0 0 12px rgba(239, 68, 68, 0.6),
+    0 0 30px rgba(239, 68, 68, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Starfish */
+.result-page.result-starfish .result-card {
+  border: 2px solid rgba(251, 146, 60, 0.8);
+  box-shadow:
+    0 0 12px rgba(251, 146, 60, 0.6),
+    0 0 30px rgba(251, 146, 60, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Nautilus */
+.result-page.result-nautilus .result-card {
+  border: 2px solid rgba(14, 165, 233, 0.8);
+  box-shadow:
+    0 0 12px rgba(14, 165, 233, 0.6),
+    0 0 30px rgba(14, 165, 233, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Lobster */
+.result-page.result-lobster .result-card {
+  border: 2px solid rgba(248, 113, 113, 0.85);
+  box-shadow:
+    0 0 12px rgba(248, 113, 113, 0.65),
+    0 0 30px rgba(248, 113, 113, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Angelfish */
+.result-page.result-angelfish .result-card {
+  border: 2px solid rgba(244, 114, 182, 0.8);
+  box-shadow:
+    0 0 12px rgba(244, 114, 182, 0.6),
+    0 0 30px rgba(244, 114, 182, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Manatee */
+.result-page.result-manatee .result-card {
+  border: 2px solid rgba(45, 212, 191, 0.8);
+  box-shadow:
+    0 0 12px rgba(45, 212, 191, 0.6),
+    0 0 30px rgba(45, 212, 191, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+
+/* Coral */
+.result-page.result-coral .result-card {
+  border: 2px solid rgba(251, 113, 133, 0.85);
+  box-shadow:
+    0 0 12px rgba(251, 113, 133, 0.65),
+    0 0 30px rgba(251, 113, 133, 0.3),
+    0 20px 60px rgba(0, 20, 40, 0.3);
+}
+ 
+/* =========================================
+   VISIBLE WORLD EDGE EFFECTS
+   ========================================= */
+
+.result-page::before,
+.result-page::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  border-radius: 50%;
+  filter: blur(35px);
+}
+
+.result-page::before {
+  width: 280px;
+  height: 280px;
+  left: 3%;
+  top: 15%;
+}
+
+.result-page::after {
+  width: 300px;
+  height: 300px;
+  right: 3%;
+  bottom: 12%;
+}
+/* =========================================
+   SIDE ANIMAL WORLDS
+   Features intentionally sit beside card
+   ========================================= */
+
+.animal-feature {
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+}
+
+
+/* =========================================
+   DOLPHIN
+   Soft bubbles on the side
+   ========================================= */
+
+.dolphin-feature {
+  left: -20px;
+  top: 25%;
+  width: 180px;
+  height: 300px;
+}
+
+.dolphin-bubble {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(224, 242, 254, 0.95);
+  background: rgba(219, 234, 254, 0.18);
+
+  box-shadow:
+    inset 1px 1px 4px rgba(255,255,255,0.9),
+    0 0 12px rgba(147,197,253,0.8),
+    0 0 22px rgba(244,114,182,0.3);
+}
+
+
+/* =========================================
+   OCTOPUS
+   Purple drifting ink
+   ========================================= */
+
+.octopus-feature {
+  left: -80px;
+  top: 20%;
+  width: 220px;
+  height: 400px;
+}
+
+.ink-wisp {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(18px);
+  opacity: 0.5;
+  animation: inkFloat 6s ease-in-out infinite;
+}
+
+.ink-one {
+  width: 120px;
+  height: 220px;
+  background: rgba(168,85,247,0.35);
+  left: 20px;
+  top: 30px;
+}
+
+.ink-two {
+  width: 90px;
+  height: 180px;
+  background: rgba(236,72,153,0.3);
+  left: 80px;
+  top: 150px;
+  animation-delay: 1.5s;
+}
+
+.ink-three {
+  width: 70px;
+  height: 150px;
+  background: rgba(99,102,241,0.35);
+  left: 0;
+  top: 230px;
+  animation-delay: 3s;
+}
+
+@keyframes inkFloat {
+  0%,100% {
+    transform: translateY(15px) scale(0.9);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateY(-20px) scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+
+/* =========================================
+   JELLYFISH
+   Glowing drifting lights
+   ========================================= */
+
+.jellyfish-feature {
+  right: -70px;
+  top: 20%;
+  width: 180px;
+  height: 400px;
+}
+
+.jelly-glow {
+  position: absolute;
+  width: 35px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(244,114,182,0.35);
+  filter: blur(10px);
+  box-shadow:
+    0 0 20px rgba(217,70,239,0.7);
+  animation: jellyFloat 5s ease-in-out infinite;
+}
+
+.jelly-one {
+  right: 30px;
+  top: 40px;
+}
+
+.jelly-two {
+  right: 90px;
+  top: 180px;
+  animation-delay: 1.5s;
+}
+
+.jelly-three {
+  right: 10px;
+  top: 300px;
+  animation-delay: 3s;
+}
+
+@keyframes jellyFloat {
+  0%,100% {
+    transform: translateY(15px);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(-25px);
+    opacity: 0.8;
+  }
+}
+
+
+/* =========================================
+   MANTA
+   Flowing ocean currents
+   ========================================= */
+
+.manta-feature {
+  right: -40px;
+  top: 25%;
+  width: 260px;
+  height: 300px;
+}
+
+.current-line {
+  position: absolute;
+  width: 230px;
+  height: 80px;
+  border-top: 2px solid rgba(153,246,228,0.45);
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: currentFlow 5s ease-in-out infinite;
+}
+
+.current-one {
+  top: 20px;
+  transform: rotate(-8deg);
+}
+
+.current-two {
+  top: 100px;
+  right: -20px;
+  transform: rotate(6deg);
+  animation-delay: 1.2s;
+}
+
+.current-three {
+  top: 180px;
+  right: 10px;
+  transform: rotate(-5deg);
+  animation-delay: 2.4s;
+}
+
+@keyframes currentFlow {
+  0%,100% {
+    transform: translateX(20px) rotate(-5deg);
+    opacity: 0.15;
+  }
+
+  50% {
+    transform: translateX(-20px) rotate(5deg);
+    opacity: 0.7;
+  }
+}
+
+
+/* =========================================
+   SHARK
+   Fast motion streaks
+   ========================================= */
+
+.shark-feature {
+  left: -30px;
+  top: 30%;
+  width: 220px;
+  height: 300px;
+}
+
+.shark-streak {
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background: rgba(147,197,253,0.5);
+  box-shadow: 0 0 10px rgba(96,165,250,0.5);
+  transform: rotate(-12deg);
+  animation: sharkMove 2.5s ease-in-out infinite;
+}
+
+.streak-one {
+  top: 60px;
+}
+
+.streak-two {
+  top: 140px;
+  left: 30px;
+  animation-delay: 0.7s;
+}
+
+.streak-three {
+  top: 220px;
+  left: 10px;
+  animation-delay: 1.4s;
+}
+
+@keyframes sharkMove {
+  0%,100% {
+    transform: translateX(-30px) rotate(-12deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(30px) rotate(-12deg);
+    opacity: 0.7;
+  }
+}
+
+
+/* =========================================
+   SEAHORSE
+   Tiny magical sparkles
+   ========================================= */
+
+.seahorse-feature {
+  right: -20px;
+  top: 15%;
+  width: 180px;
+  height: 400px;
+}
+
+.seahorse-spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f9a8d4;
+  box-shadow:
+    0 0 8px #f472b6,
+    0 0 18px rgba(167,139,250,0.6);
+  animation: sparkle 2.5s ease-in-out infinite;
+}
+
+.seahorse-spark:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.seahorse-spark:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.seahorse-spark:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes sparkle {
+  0%,100% {
+    opacity: 0.2;
+    transform: scale(0.6);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+
+/* =========================================
+   WHALE
+   Deep ocean slow particles
+   ========================================= */
+
+.whale-feature {
+  left: -20px;
+  top: 20%;
+  width: 160px;
+  height: 400px;
+}
+
+.whale-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(125,211,252,0.5);
+  box-shadow: 0 0 15px rgba(59,130,246,0.5);
+  animation: whaleDrift 7s ease-in-out infinite;
+}
+
+.whale-one {
+  width: 9px;
+  height: 9px;
+  top: 80px;
+  left: 50px;
+}
+
+.whale-two {
+  width: 5px;
+  height: 5px;
+  top: 200px;
+  left: 100px;
+  animation-delay: 2s;
+}
+
+.whale-three {
+  width: 7px;
+  height: 7px;
+  top: 300px;
+  left: 30px;
+  animation-delay: 4s;
+}
+
+@keyframes whaleDrift {
+  0%,100% {
+    transform: translateY(20px);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(-30px);
+    opacity: 0.8;
+  }
+}
+
+
+/* =========================================
+   CLOWNFISH
+   Warm reef particles
+   ========================================= */
+
+.clownfish-feature {
+  right: -20px;
+  top: 20%;
+  width: 160px;
+  height: 400px;
+}
+
+.reef-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(251,146,60,0.55);
+  box-shadow: 0 0 14px rgba(251,191,36,0.5);
+  animation: reefFloat 4s ease-in-out infinite;
+}
+
+.reef-one {
+  top: 70px;
+  left: 30px;
+}
+
+.reef-two {
+  top: 150px;
+  left: 100px;
+  animation-delay: 1s;
+}
+
+.reef-three {
+  top: 240px;
+  left: 50px;
+  animation-delay: 2s;
+}
+
+.reef-four {
+  top: 320px;
+  left: 120px;
+  animation-delay: 3s;
+}
+
+@keyframes reefFloat {
+  0%,100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+/* =========================================
+   TURTLE
+   Soft drifting seaweed
+   ========================================= */
+
+.turtle-feature {
+  left: -30px;
+  bottom: 5%;
+  width: 180px;
+  height: 300px;
+}
+
+.seaweed {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(74,222,128,0.3);
+  filter: blur(2px);
+  transform-origin: bottom;
+  animation: seaweedMove 4s ease-in-out infinite;
+}
+
+.seaweed-one {
+  left: 30px;
+}
+
+.seaweed-two {
+  left: 80px;
+  height: 190px;
+  animation-delay: 1s;
+}
+
+.seaweed-three {
+  left: 130px;
+  height: 130px;
+  animation-delay: 2s;
+}
+
+@keyframes seaweedMove {
+  0%,100% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+}
+/* =========================================
+   ORCA
+   Powerful dark ocean currents
+   ========================================= */
+
+.orca-feature {
+  right: -40px;
+  top: 25%;
+  width: 250px;
+  height: 300px;
+}
+
+.orca-wave {
+  position: absolute;
+  width: 240px;
+  height: 70px;
+  border-top: 3px solid rgba(103, 232, 249, 0.4);
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: orcaFlow 5s ease-in-out infinite;
+}
+
+.orca-wave-one {
+  top: 40px;
+}
+
+.orca-wave-two {
+  top: 120px;
+  animation-delay: 1.3s;
+}
+
+.orca-wave-three {
+  top: 200px;
+  animation-delay: 2.6s;
+}
+
+@keyframes orcaFlow {
+  0%, 100% {
+    transform: translateX(25px) scaleX(0.85);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: translateX(-20px) scaleX(1.1);
+    opacity: 0.65;
+  }
+}
+
+
+/* =========================================
+   PENGUIN
+   Soft falling ice
+   ========================================= */
+
+.penguin-feature {
+  left: -20px;
+  top: 10%;
+  width: 180px;
+  height: 450px;
+}
+
+.ice-particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(224, 242, 254, 0.85);
+  box-shadow: 0 0 10px rgba(186, 230, 253, 0.7);
+  animation: fallingIce 5s linear infinite;
+}
+
+@keyframes fallingIce {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   OTTER
+   Playful bubbles
+   ========================================= */
+
+.otter-feature {
+  right: -20px;
+  top: 30%;
+  width: 180px;
+  height: 300px;
+}
+
+.otter-bubble {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(254, 240, 138, 0.7);
+  background: rgba(253, 230, 138, 0.08);
+  box-shadow: 0 0 12px rgba(251, 191, 36, 0.45);
+  animation: otterBubble 4s ease-in-out infinite;
+}
+
+.otter-one {
+  width: 14px;
+  height: 14px;
+  left: 30px;
+  bottom: 20px;
+}
+
+.otter-two {
+  width: 9px;
+  height: 9px;
+  left: 80px;
+  bottom: 50px;
+  animation-delay: 1s;
+}
+
+.otter-three {
+  width: 18px;
+  height: 18px;
+  left: 120px;
+  bottom: 10px;
+  animation-delay: 2s;
+}
+
+.otter-four {
+  width: 7px;
+  height: 7px;
+  left: 150px;
+  bottom: 80px;
+  animation-delay: 3s;
+}
+
+@keyframes otterBubble {
+  0% {
+    transform: translateY(20px) scale(0.7);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(-120px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   SQUID
+   Bioluminescent tendrils
+   ========================================= */
+
+.squid-feature {
+  left: -50px;
+  top: 20%;
+  width: 220px;
+  height: 400px;
+}
+
+.squid-tendril {
+  position: absolute;
+  width: 5px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(167, 139, 250, 0.05),
+    rgba(139, 92, 246, 0.7)
+  );
+  filter: blur(2px);
+  transform-origin: top;
+  animation: squidFloat 4s ease-in-out infinite;
+}
+
+.squid-one {
+  left: 40px;
+}
+
+.squid-two {
+  left: 100px;
+  height: 270px;
+  animation-delay: 1s;
+}
+
+.squid-three {
+  left: 160px;
+  height: 190px;
+  animation-delay: 2s;
+}
+
+@keyframes squidFloat {
+  0%, 100% {
+    transform: rotate(-8deg) scaleY(0.9);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: rotate(8deg) scaleY(1.05);
+    opacity: 0.8;
+  }
+}
+
+
+/* =========================================
+   CRAB
+   Sand particles
+   ========================================= */
+
+.crab-feature {
+  left: -20px;
+  bottom: 10%;
+  width: 180px;
+  height: 250px;
+}
+
+.sand-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(254, 215, 170, 0.7);
+  box-shadow: 0 0 8px rgba(251, 146, 60, 0.35);
+  animation: sandDrift 4s ease-in-out infinite;
+}
+
+.sand-one {
+  width: 5px;
+  height: 5px;
+  left: 20px;
+  bottom: 50px;
+}
+
+.sand-two {
+  width: 8px;
+  height: 8px;
+  left: 70px;
+  bottom: 80px;
+  animation-delay: 0.7s;
+}
+
+.sand-three {
+  width: 4px;
+  height: 4px;
+  left: 120px;
+  bottom: 30px;
+  animation-delay: 1.4s;
+}
+
+.sand-four {
+  width: 6px;
+  height: 6px;
+  left: 150px;
+  bottom: 100px;
+  animation-delay: 2s;
+}
+
+.sand-five {
+  width: 4px;
+  height: 4px;
+  left: 45px;
+  bottom: 130px;
+  animation-delay: 2.5s;
+}
+
+@keyframes sandDrift {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translate(20px, -15px);
+    opacity: 0.75;
+  }
+}
+
+
+/* =========================================
+   STARFISH
+   Warm little stars
+   ========================================= */
+
+.starfish-feature {
+  right: -30px;
+  top: 20%;
+  width: 180px;
+  height: 350px;
+}
+
+.star-spark {
+  position: absolute;
+  font-size: 24px;
+  color: rgba(253, 186, 116, 0.8);
+  text-shadow:
+    0 0 8px rgba(251, 146, 60, 0.8),
+    0 0 20px rgba(250, 204, 21, 0.5);
+  animation: starTwinkle 3s ease-in-out infinite;
+}
+
+.star-one {
+  left: 30px;
+  top: 50px;
+}
+
+.star-two {
+  right: 30px;
+  top: 160px;
+  animation-delay: 1s;
+}
+
+.star-three {
+  left: 70px;
+  top: 280px;
+  animation-delay: 2s;
+}
+
+@keyframes starTwinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.7) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.25) rotate(20deg);
+  }
+}
+
+
+/* =========================================
+   NAUTILUS
+   Soft spiral rings
+   ========================================= */
+
+.nautilus-feature {
+  left: -40px;
+  top: 25%;
+  width: 220px;
+  height: 300px;
+}
+
+.nautilus-ring {
+  position: absolute;
+  border: 2px solid rgba(125, 211, 252, 0.45);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.35);
+  animation: nautilusPulse 5s ease-in-out infinite;
+}
+
+.ring-one {
+  width: 80px;
+  height: 80px;
+  left: 30px;
+  top: 40px;
+}
+
+.ring-two {
+  width: 130px;
+  height: 130px;
+  left: 5px;
+  top: 15px;
+  animation-delay: 1s;
+}
+
+.ring-three {
+  width: 180px;
+  height: 180px;
+  left: -20px;
+  top: -10px;
+  animation-delay: 2s;
+}
+
+@keyframes nautilusPulse {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+}
+
+
+/* =========================================
+   LOBSTER
+   Warm red deep-sea embers
+   ========================================= */
+
+.lobster-feature {
+  right: -20px;
+  top: 20%;
+  width: 180px;
+  height: 400px;
+}
+
+.lobster-glow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(248, 113, 113, 0.5);
+  box-shadow:
+    0 0 15px rgba(239, 68, 68, 0.8),
+    0 0 30px rgba(248, 113, 113, 0.4);
+  animation: lobsterGlow 3s ease-in-out infinite;
+}
+
+.lobster-one {
+  top: 60px;
+  left: 30px;
+}
+
+.lobster-two {
+  top: 190px;
+  left: 100px;
+  animation-delay: 1s;
+}
+
+.lobster-three {
+  top: 310px;
+  left: 50px;
+  animation-delay: 2s;
+}
+
+@keyframes lobsterGlow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+
+/* =========================================
+   ANGELFISH
+   Elegant pink light rays
+   ========================================= */
+
+.angelfish-feature {
+  right: -30px;
+  top: 15%;
+  width: 200px;
+  height: 420px;
+}
+
+.angel-ray {
+  position: absolute;
+  width: 4px;
+  height: 260px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(244, 114, 182, 0),
+    rgba(244, 114, 182, 0.6),
+    rgba(129, 140, 248, 0)
+  );
+  filter: blur(2px);
+  transform: rotate(20deg);
+  animation: angelRay 5s ease-in-out infinite;
+}
+
+.angel-one {
+  left: 30px;
+}
+
+.angel-two {
+  left: 90px;
+  height: 320px;
+  animation-delay: 1.5s;
+}
+
+.angel-three {
+  left: 150px;
+  animation-delay: 3s;
+}
+
+@keyframes angelRay {
+  0%, 100% {
+    opacity: 0.15;
+    transform: rotate(15deg) translateY(20px);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: rotate(25deg) translateY(-20px);
+  }
+}
+
+
+/* =========================================
+   MANATEE
+   Slow gentle bubbles
+   ========================================= */
+
+.manatee-feature {
+  left: -30px;
+  top: 30%;
+  width: 180px;
+  height: 300px;
+}
+
+.manatee-bubble {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(153, 246, 228, 0.65);
+  box-shadow: 0 0 10px rgba(45, 212, 191, 0.35);
+  animation: manateeBubble 7s ease-in-out infinite;
+}
+
+.manatee-one {
+  width: 12px;
+  height: 12px;
+  left: 30px;
+  bottom: 30px;
+}
+
+.manatee-two {
+  width: 7px;
+  height: 7px;
+  left: 90px;
+  bottom: 70px;
+  animation-delay: 2s;
+}
+
+.manatee-three {
+  width: 17px;
+  height: 17px;
+  left: 130px;
+  bottom: 10px;
+  animation-delay: 4s;
+}
+
+@keyframes manateeBubble {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(-140px);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   CORAL
+   Soft branching reef shapes
+   ========================================= */
+
+.coral-feature {
+  right: -30px;
+  bottom: 5%;
+  width: 200px;
+  height: 300px;
+}
+
+.coral-branch {
+  position: absolute;
+  bottom: 0;
+  width: 14px;
+  border-radius: 50% 50% 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(251, 113, 133, 0.7),
+    rgba(251, 146, 60, 0.3)
+  );
+  filter: blur(1px);
+  transform-origin: bottom;
+  animation: coralSway 5s ease-in-out infinite;
+}
+
+.coral-one {
+  height: 180px;
+  left: 20px;
+}
+
+.coral-two {
+  height: 240px;
+  left: 85px;
+  animation-delay: 1s;
+}
+
+.coral-three {
+  height: 140px;
+  left: 145px;
+  animation-delay: 2s;
+}
+
+@keyframes coralSway {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+}/* =========================================
+   VISIBLE WORLD EDGE EFFECTS
+   ========================================= */
+
+.result-page::before,
+.result-page::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 50%;
+  filter: blur(55px);
+}
+
+.result-page::before {
+  width: 320px;
+  height: 320px;
+  left: -80px;
+  top: 8%;
+
+  background: var(--world-glow-one);
+  opacity: 0.7;
+}
+
+.result-page::after {
+  width: 340px;
+  height: 340px;
+  right: -80px;
+  bottom: 5%;
+
+  background: var(--world-glow-two);
+  opacity: 0.65;
+}
+.result-octopus {
+  --world-glow-one: rgba(168, 85, 247, 0.8);
+  --world-glow-two: rgba(236, 72, 153, 0.7);
+}
+
+.result-dolphin {
+  --world-glow-one: rgba(56, 189, 248, 0.8);
+  --world-glow-two: rgba(244, 114, 182, 0.6);
+}
+
+.result-whale {
+  --world-glow-one: rgba(59, 130, 246, 0.8);
+  --world-glow-two: rgba(125, 211, 252, 0.6);
+}
+
+.result-turtle {
+  --world-glow-one: rgba(34, 197, 94, 0.7);
+  --world-glow-two: rgba(74, 222, 128, 0.6);
+}
+
+.result-shark {
+  --world-glow-one: rgba(96, 165, 250, 0.85);
+  --world-glow-two: rgba(147, 197, 253, 0.65);
+}
+
+.result-orca {
+  --world-glow-one: rgba(14, 116, 144, 0.85);
+  --world-glow-two: rgba(103, 232, 249, 0.6);
+}
+
+.result-manta {
+  --world-glow-one: rgba(45, 212, 191, 0.8);
+  --world-glow-two: rgba(153, 246, 228, 0.65);
+}
+
+.result-jellyfish {
+  --world-glow-one: rgba(217, 70, 239, 0.8);
+  --world-glow-two: rgba(244, 114, 182, 0.65);
+}
+
+.result-seahorse {
+  --world-glow-one: rgba(244, 114, 182, 0.8);
+  --world-glow-two: rgba(196, 181, 253, 0.7);
+}
+
+.result-clownfish {
+  --world-glow-one: rgba(251, 146, 60, 0.8);
+  --world-glow-two: rgba(251, 191, 36, 0.65);
+}
+
+.result-penguin {
+  --world-glow-one: rgba(125, 211, 252, 0.8);
+  --world-glow-two: rgba(224, 242, 254, 0.65);
+}
+
+.result-otter {
+  --world-glow-one: rgba(251, 191, 36, 0.8);
+  --world-glow-two: rgba(253, 230, 138, 0.65);
+}
+
+.result-squid {
+  --world-glow-one: rgba(139, 92, 246, 0.85);
+  --world-glow-two: rgba(167, 139, 250, 0.65);
+}
+
+.result-crab {
+  --world-glow-one: rgba(239, 68, 68, 0.75);
+  --world-glow-two: rgba(254, 215, 170, 0.65);
+}
+
+.result-starfish {
+  --world-glow-one: rgba(251, 146, 60, 0.8);
+  --world-glow-two: rgba(250, 204, 21, 0.65);
+}
+
+.result-nautilus {
+  --world-glow-one: rgba(14, 165, 233, 0.8);
+  --world-glow-two: rgba(45, 212, 191, 0.65);
+}
+
+.result-lobster {
+  --world-glow-one: rgba(248, 113, 113, 0.8);
+  --world-glow-two: rgba(244, 114, 182, 0.65);
+}
+
+.result-angelfish {
+  --world-glow-one: rgba(244, 114, 182, 0.8);
+  --world-glow-two: rgba(129, 140, 248, 0.65);
+}
+
+.result-manatee {
+  --world-glow-one: rgba(94, 234, 212, 0.8);
+  --world-glow-two: rgba(134, 239, 172, 0.65);
+}
+
+.result-coral {
+  --world-glow-one: rgba(251, 113, 133, 0.85);
+  --world-glow-two: rgba(251, 146, 60, 0.75);
 }
